@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mtalh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-18 11:02:13 AM"/>
+        <attribute name="created" value="bXRhbGg7TVlBWUxBNDI7MjAyMy0wNy0xODsxMDo0NDozMCBBTTsyMzYx"/>
+        <attribute name="edited" value="bXRhbGg7TVlBWUxBNDI7MjAyMy0wNy0xODsxMTowMjoxMyBBTTs0OzI0Njg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s1, s2" type="Integer" array="False" size=""/>
+            <output expression="&quot;1.sayiyi giriniz&quot;" newline="True"/>
+            <input variable="s1"/>
+            <output expression="&quot;1.sayiyi giriniz&quot;" newline="True"/>
+            <input variable="s2"/>
+            <if expression="s1 &gt; s2">
+                <then>
+                    <output expression="s1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="s1 == s2">
+                        <then>
+                            <output expression="&quot;iki say&#305;da e&#351;ittir&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="s2" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mtalh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-18 10:44:22 AM"/>
+        <attribute name="created" value="bXRhbGg7TVlBWUxBNDI7MjAyMy0wNy0xODsxMDowMzowMiBBTTsyMzU1"/>
+        <attribute name="edited" value="bXRhbGg7TVlBWUxBNDI7MjAyMy0wNy0xODsxMDo0NDoyMiBBTTsxOzI0NzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s1, s2, toplam" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <output expression="&quot;lutfen 1.sayiyi giriniz&quot;" newline="True"/>
+            <input variable="s1"/>
+            <output expression="&quot;lutfen 2.sayiyi giriniz&quot;" newline="True"/>
+            <input variable="s2"/>
+            <assign variable="toplam" expression="s1 +s2"/>
+            <output expression="s1&amp;&quot; + &quot;&amp;s2&amp;&quot; = &quot;&amp;toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

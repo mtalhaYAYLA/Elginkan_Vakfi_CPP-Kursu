@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mtalh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-18 12:46:48 PM"/>
+        <attribute name="created" value="bXRhbGg7TVlBWUxBNDI7MjAyMy0wNy0xODsxMTozNjozMyBBTTsyMzY2"/>
+        <attribute name="edited" value="bXRhbGg7TVlBWUxBNDI7MjAyMy0wNy0xODsxMjo0Njo0OCBQTTsxOzI0OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;dik kenar uzunlu&#287;u&quot;" newline="True"/>
+            <input variable="a"/>
+            <while expression="a &lt; 1">
+                <input variable="a"/>
+            </while>
+            <output expression="&quot;kenar yatay giriniz&quot;" newline="True"/>
+            <input variable="b"/>
+            <while expression="b&lt;1">
+                <input variable="b"/>
+            </while>
+            <while expression="a&gt;b">
+                <output expression="&quot;hatal&#305; giri&#351; k&#305;sa kenar uzun olamaz, tekrar giri&#351; yap&#305;n&#305;z&quot;" newline="True"/>
+                <output expression="&quot;k&#305;sa kenar giriniz&quot;" newline="True"/>
+                <input variable="a"/>
+                <output expression="&quot;uzun kenar giriniz&quot;" newline="True"/>
+                <input variable="b"/>
+            </while>
+            <output expression="&quot;dikd&#246;rtgenin alan&#305; = &quot;&amp;a*b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

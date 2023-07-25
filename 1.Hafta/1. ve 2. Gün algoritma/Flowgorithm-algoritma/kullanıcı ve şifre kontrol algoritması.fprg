@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mtalh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-19 09:32:47 AM"/>
+        <attribute name="created" value="bXRhbGg7TVlBWUxBNDI7MjAyMy0wNy0xOTswOTowMDoxOCBBTTsyMzY4"/>
+        <attribute name="edited" value="bXRhbGg7TVlBWUxBNDI7MjAyMy0wNy0xOTswOTozMjo0NyBBTTszOzI0ODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sifre, i, str" type="Integer" array="False" size=""/>
+            <declare name="kadi, kullan&#305;c&#305;" type="String" array="False" size=""/>
+            <assign variable="kadi" expression="admin"/>
+            <assign variable="sfr" expression="1234"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=3">
+                <output expression="&quot;kullan&#305;c&#305; adi&quot;" newline="True"/>
+                <input variable="kullan&#305;c&#305;"/>
+                <output expression="&quot;&#351;ifre&quot;" newline="True"/>
+                <input variable="sfr"/>
+                <if expression="(kadi == kullan&#305;c&#305;) &amp;&amp; (sifre == sfr)">
+                    <then>
+                        <output expression="&quot;giri&#351; bal&#351;ar&#305;l&#305;&quot;" newline="True"/>
+                        <assign variable="i" expression="i+ 4"/>
+                    </then>
+                    <else>
+                        <if expression="i == 3">
+                            <then>
+                                <output expression="&quot;&#351;ifre bloke edildi&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;kullan&#305;c&#305; ad&#305; veya &#351;ifre hatal&#305;&quot;&amp; 3-i &amp;&quot;deneme hakk&#305;n&#305;z kald&#305;&quot;" newline="True"/>
+                            </else>
+                        </if>
+                        <assign variable="i" expression="i + 1"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

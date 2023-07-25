@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mtalh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-18 11:36:29 AM"/>
+        <attribute name="created" value="bXRhbGg7TVlBWUxBNDI7MjAyMy0wNy0xODsxMTowMjoyNyBBTTsyMzYy"/>
+        <attribute name="edited" value="bXRhbGg7TVlBWUxBNDI7MjAyMy0wNy0xODsxMTozNjoyOSBBTTsxOzI0Nzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, toplam, k" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <assign variable="k" expression="1"/>
+            <output expression="&quot;bir de&#287;er giriniz&quot;" newline="True"/>
+            <input variable="i"/>
+            <while expression="k &lt;= i">
+                <assign variable="toplam" expression="toplam + k"/>
+                <assign variable="k" expression="k+1"/>
+            </while>
+            <output expression="toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
