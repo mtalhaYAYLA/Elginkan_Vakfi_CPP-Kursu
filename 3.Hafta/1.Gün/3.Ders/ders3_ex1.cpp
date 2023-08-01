@@ -10,6 +10,8 @@ class Sinema{
     int salonMevcut;
     double bakiye;
     int salonNo;
+    int satilanBiletİndirimli = 0;
+    int satilanBiletTam = 0;
 
     const double TAM = 150.0;
     const double INDIRIMLI = 120.0;
@@ -49,13 +51,35 @@ class Sinema{
         {
             bakiye += INDIRIMLI;
             cout << "Bilet satildi." << endl;
+            satilanBiletİndirimli++;
         }
         else
         {
             bakiye += TAM;
             cout << "Bilet satildi." << endl;
+            satilanBiletTam++;
         }
         bosKoltukSayisi--;
+    }
+
+    void BiletIptal(bool iptal)
+    {
+        if(iptal == 1 && satilanBiletTam > 0)
+        {
+            bosKoltukSayisi++;
+            satilanBiletTam--;
+            bakiye -= TAM;
+            cout << "Tam bilet iptal islemi gerceklestirildi";
+        }
+        else if(iptal == 0 && satilanBiletİndirimli > 0)
+        {
+            bosKoltukSayisi++;
+            satilanBiletİndirimli--;
+            bakiye -= INDIRIMLI;
+            cout << "indirimli bilet iptal islemi gerceklestirildi";
+        }
+        else
+            cout << "Bilet satisi gerçellestirilmediginden iptal olamaz";
     }
 
     int boskoltukOgren()
